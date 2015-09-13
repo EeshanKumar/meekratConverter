@@ -1,0 +1,27 @@
+{
+  "name": "meekratConverter",
+  "version": "0.1.0",
+  "description": "Fun project to convert strings to meekrat language",
+  "main": "server.js",
+  "scripts": {
+    "test": "/node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EeshanKumar/meekratConverter.git"
+  },
+  "author": "me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EeshanKumar/meekratConverter/issues"
+  },
+  "homepage": "https://github.com/EeshanKumar/meekratConverter",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4"
+  },
+  "devDependencies": {
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
+  }
+}

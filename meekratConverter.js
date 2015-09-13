@@ -1,41 +1,8 @@
 /* ----------------- Meerkats -------------------------------------------------
  Meerkats make a sort of chirping noise (according to my 30 seconds of
- research).  We're going to translate two sentences into meerkat speech.
+ research).  We're going to translate sentences into meerkat speech.
+ by replacing the words in the sentence with "chirp".
 */
-
-var sentence1 = "More food please.",
-    sentence2 = "Come over here so you can scratch my belly.";
-
-/*
- TODO: 20 points
- Your goal is to replace the words in the above sentences with "chirp" The
- assertions at the end of this section should pass when you're done.  Use
- **two** different kinds of loops to implement this.
- HINT: the "split" method on String will be useful.
-*/
-
-//Here is my old code with the two differeent loops that will hopefully still
-//give me full credit. But my new code is better!!!
-// function convertToMeekrat(sentence) {
-//   var wordArray = sentence.split(" ");
-//   for (var i = 0; i < wordArray.length; i++) {
-//     wordArray[i] = "chirp";
-//   }
-//   return wordArray.join(" ") + ".";
-// }
-
-// function convertToMeekratDifferently(sentence) {
-//   var i = 0;
-//   var wordArray = sentence.split(" ");
-//   while (i < wordArray.length) {
-//     wordArray[i] = "chirp";
-//     i += 1;
-//   }
-//   return wordArray.join(" ") + ".";
-// }
-
-//This code makes it work with punctuation!!! Although I'm sorry, my comments
-//are garbage... please teach me how to make them better!
 
 //Input:  arrayToSplit - An array of strings, splitingString - a string to split by
 //Output: An array with the same string value (if you used array.join(""))
