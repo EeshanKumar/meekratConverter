@@ -1,18 +1,27 @@
 {
   "name": "meekratConverter",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Fun project to convert strings to meekrat language",
+  "main": "server.js",
+  "scripts": {
+    "test": "/node_modules/mocha/bin/mocha"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/EeshanKumar/meekratConverter"
+    "url": "https://github.com/EeshanKumar/meekratConverter.git"
   },
-  "description": "Fun javascript problem to convert strings to chirps",
+  "author": "me",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EeshanKumar/meekratConverter/issues"
+  },
+  "homepage": "https://github.com/EeshanKumar/meekratConverter",
   "dependencies": {
-    "express": "~4.12.2",
-    "body-parser": "~1.12.0",
-    "request": "~2.53.0"
+    "body-parser": "^1.12.4",
+    "express": "^4.12.4"
   },
   "devDependencies": {
-    "grunt": "^0.4.5",
-    "grunt-contrib-jshint": "^0.11.0"
+    "chai": "^2.3.0",
+    "mocha": "^2.2.5"
   }
 }
