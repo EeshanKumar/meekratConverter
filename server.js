@@ -5,13 +5,11 @@ var app = express();
 var bodyparser = require('body-parser');
 var port = process.env.PORT || 3000;
 
-var textToMeekrat = require('./lib/textToMeekrat');
-
 app.use(bodyparser.json());
-app.use(bodyparser.urlencoded({ extended: true }));
 
 //Serve up static index.html
 app.use(express.static(__dirname + '/app/'));
+app.use(bodyparser.urlencoded({ extended: true }));
 
 //Make sure index points to index.html
 app.get('/', function(req, res) {
@@ -20,8 +18,10 @@ app.get('/', function(req, res) {
 
 //Post request for finding images
 app.post('/textToMeekrat', function(req, res) {
-  //Get random image from google
-  var convertedText = textToMeekrat(req.body.textObj.textToConvert);
+  var textToMeekrat = require('./lib/textToMeekrat');
+  console.log(req.body);
+
+  var convertedText = textToMeekrat.convertToMeekrat(req.body.textToConvert);
   var responseObj = {
     meekratText: convertedText
   };

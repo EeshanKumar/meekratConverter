@@ -7,7 +7,7 @@ $(document).ready(function() {
 		console.log(textObj);
 		//POST to server using ajax
 		$.post("textToMeekrat", textObj, function(res) {
-			$("#converted p").text("Converted Text:<br/>" + res.meekratText);
+			$("#converted p").html("Converted Text:<br/>" + res.meekratText);
 		});
 	});
 });
